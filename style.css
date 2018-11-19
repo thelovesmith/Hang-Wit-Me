@@ -1,0 +1,52 @@
+body {
+    background-color:turquoise;
+
+
+}
+
+header {
+    
+    font: 30px;
+    text-align: center;
+    height:150px;
+    width:80%;
+    margin:0 auto;
+    font-style: oblique;
+
+}
+
+#underscores {
+    
+    font-size: 90px;
+    text-align: center;
+    height:150px;
+    width:80%;
+    margin:0 auto;
+    font-style: oblique;
+}
+
+#Guessed {
+        
+        font-size: 20px;
+        text-align: center;
+        height:150px;
+        width:80%;
+        margin:0 auto;
+        font-style: oblique;
+}
+
+#wrong {
+        
+        font-size: 20px;
+        text-align: center;
+        height:150px;
+        width:80%;
+        margin:0 auto;
+        font-style: oblique;
+
+}
+div.newGame{
+    display: flex;
+    justify-content: center;
+
+}

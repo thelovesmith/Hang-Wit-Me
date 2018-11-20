@@ -1,5 +1,5 @@
-body {
-    background-color:turquoise;
+#body {
+    background-color:cornsilk;
 
 
 }
@@ -13,6 +13,9 @@ header {
     margin:0 auto;
     font-style: oblique;
 
+}
+h3{
+    margin: 10px;
 }
 
 #underscores {
@@ -48,5 +51,16 @@ header {
 div.newGame{
     display: flex;
     justify-content: center;
+    margin: 100px;
 
+}
+img{
+    display: block;
+    margin: 0 auto;
+    height: 200px;
+    width: 200px;
+}
+div{
+    margin: 0 auto;
+    text-align: center;
 }

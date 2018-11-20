@@ -8,7 +8,7 @@ var $guessesLeft = document.getElementById('guessesleft')
 var $guessedLetters = document.getElementById('Guessed');
 // console.log($newGame, 'new game')
 // console.log($underScores, 'new game')
-var words = ['Spongebob', 'Simpsons', 'Pokemon', 'Warp Drive', 'Interstellar'];
+var words = ['Spongebob', 'Simpsons', 'Pokemon', 'Family Guy', 'Archer'];
 var wins = 0;
 var losses = 0;
 var guessesLeft = 9;
@@ -74,6 +74,7 @@ function checkIncorrect(letter) {
   //check to see if Letter is incorrect
   if(chosenWordplaceholder.indexOf(letter.toLowerCase()) === -1 && chosenWordplaceholder.indexOf(letter.toUpperCase()) === -1 ){
     console.log('wrong letter?')
+    
     //Decrement guesses
     guessesLeft --;
     //add wrong letter to wrong letter bank
@@ -90,7 +91,7 @@ function checkLoss() {
     console.log('loss')
     losses++;
     gameRunning = false;
-    $losses.textContent = losses;
+    $losses.append(losses);
     $underScores.textContent = chosenWord;
     resetGame();
   }
@@ -103,7 +104,10 @@ function checkWin() {
     console.log('wins')
     wins++;
     gameRunning = false;
-    $wins.textContent = wins;
+    $wins.append(wins);
+    alert('You Won!!');
+    $underScores.textContent = chosenWord;
+    // resetGame();
   }
  
 }
